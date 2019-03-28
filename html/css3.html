@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/css3.css" type="text/css">
+</head>
+<body>
+    <script type="text/javascript">
+        window.onload=function(){
+           var canvas = document.getElementById("mycanvas");
+           var ctx =  canvas.getContext("2d");
+           ctx.lineWith=10;
+           ctx.strokeStyle = "dodgerblue";
+           ctx.moveTo(0,0);
+           ctx.strokeRect(0,0,600,600);
+           var apple = document.getElementById("apple");
+            //将图像绘制到画布的，图片的左上角
+           ctx.drawImage(apple, 30, 30, 350, 100);
+        }
+    </script>
+    <div class="tri">
+    </div>
+    <div>
+        <div class="container rotate"></div>
+        <!-- <div class="container scale"></div>
+        <div class="container translate"></div> -->
+    </div>
+    <canvas id="mycanvas" width="600" height="500"></canvas>
+    <img id="apple" src="./timg.jpg" alt="lss">
+</body>
+</html>

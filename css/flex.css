@@ -1,0 +1,25 @@
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* 两端对齐 */
+    justify-content: space-between; 
+    flex-direction: column;
+}
+
+.header,.footer{
+    /* 放大 缩小 项目本身大小*/
+    flex: 0 0 50px; 
+    background-color: pink;
+}
+.main{
+    /* 等分剩余空间 */
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+}
+.left,.right{
+    flex: 0 0 100px;
+    background-color: lightcoral;
+}

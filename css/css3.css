@@ -1,0 +1,29 @@
+.tri{
+    width:0;
+    height:0;
+    /* border-top: 50px solid transparent; */
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid red;
+    float: left;
+    margin-left:300px; 
+}
+
+.container{
+    width:100px;
+    height: 100px;
+    background-color: rgb(91, 67, 116);
+}
+.rotate{
+    transform:translate(100px,20px) rotateX(45deg) scale(2);
+    transition: width 2s linear 1s;
+}
+.rotate:hover {
+    width:200px;
+}
+/* .scale{
+    transform: scale(2);
+}
+.translate{
+    transform: translate(10px,20px);
+} */

@@ -1,0 +1,98 @@
+.container{
+
+}
+*{
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: lightblue;
+
+}
+.header .nav{
+    float: right;
+    margin-right: 30px;
+}
+.header a{
+    text-decoration: none;
+    color: black;
+    margin-left: 50px;
+    line-height: 70px;
+}
+.banner{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+@-webkit-keyframes move{
+    0%{
+        left:0px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+.banner ul{
+    position: absolute;
+    left: 0;
+    top:0;
+    -webkit-animation: 5s move infinite linear;
+}
+.banner ul>li {
+    list-style: none;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    background-color: pink;
+}
+
+.content{
+    /* 定块 水平居中 */
+    padding: 30px;
+    margin: 0 auto;
+    border: 1px solid pink;
+    max-width: 1128px;
+    min-height: 500px;
+}
+
+.content .content-gw{
+    padding: 0;
+    margin: 0;
+}
+
+.content .content-gw .content-item{
+    display: inline-block;
+    padding: 20px;
+    margin-right: 25px;
+    width: calc((100% - 30px * 2) / 3);
+    height: 410px;
+    border: 2px solid lightblue;
+}
+.content .content-gw .content-item:last-child{
+    margin-right: 0;
+}
+
+.item-title{
+    float: left;
+    padding: 30px;
+    width:100%;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 1px solid lightblue;
+}
+.item-title::after{
+    clear: both;
+}
+.item-center{
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 1px solid lightblue;
+}
